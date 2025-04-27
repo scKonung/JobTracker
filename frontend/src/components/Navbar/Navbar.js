@@ -1,12 +1,18 @@
 import React from 'react'
-import './Header.css'
+import './Navbar.css'
 
-function Header() {
+const Navbar = () => {
 	return (
 		<header className='header'>
-			<h1>JobTracker</h1>
-			<nav>
+			<div className='header__logo'>
+				<h1>JobTracker</h1>
+			</div>
+
+			<nav className='header__nav'>
 				<ul className='nav-links'>
+					<li>
+						<a href='#'>Profile</a>
+					</li>
 					<li>
 						<a href='#'>Dashboard</a>
 					</li>
@@ -18,8 +24,12 @@ function Header() {
 					</li>
 				</ul>
 			</nav>
+
+			<div className='header__login'>
+				<a href='#'>Register</a>
+			</div>
 		</header>
 	)
 }
 
-export default Header
+export default Navbar
