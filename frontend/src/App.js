@@ -1,17 +1,17 @@
 import React from 'react'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import Header from './containers/Header/Header'
+import Vacancies from './containers/Vacancies/Vacancies'
 
-function App() {
+const App = () => {
 	return (
-		<div className='App'>
+		<>
+			<Navbar />
 			<Header />
-			<main>
-				<h1>Welcome to JobTracker! 🚀</h1>
-				<p>Track your job easily with our new application</p>
-			</main>
+			<Vacancies />
 			<Footer />
-		</div>
+		</>
 	)
 }
 
